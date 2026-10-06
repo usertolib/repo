@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "fovrecorder",
+  "version": "${version}",
+  "name": "FOV Recorder",
+  "description": "Records the whole game screen to MP4 using FFmpeg.",
+  "authors": ["Hunstorm"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["uz.fovrecorder.FovRecorderClient"] },
+  "mixins": ["fovrecorder.mixins.json"],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
